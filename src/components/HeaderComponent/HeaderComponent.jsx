@@ -1,29 +1,29 @@
 import React from 'react'
 import {Col } from 'antd'
 import { WrapperHeader, WrapperHeaderAccount, WrapperTextHeader, WrapperTextHeaderSmall } from './style'
-import Search from 'antd/lib/transfer/search'
 import {
   SmileOutlined,CaretDownOutlined,ShoppingCartOutlined
 } from '@ant-design/icons';
+import ButtoninputSearch from '../ButtoninputSearch/ButtoninputSearch';
 
 const HeaderComponent = () => {
   return (    // <WrapperHeader gutter={16}> kh cách giữa user and search
     <div>
-        <WrapperHeader> 
+        <WrapperHeader > 
             <Col span={4}>
               <WrapperTextHeader>TIKI</WrapperTextHeader>
             </Col>
             <Col span={12}>
             
-                <Search
-                  placeholder="input search text"
-                  //allowClear
-                  enterButton="Search"
-                  size="large"
-                  //onSearch={onSearch}
+                <ButtoninputSearch
+                size="large"
+                bordered="false"
+                textButton="Tìm kiếm"
+                placeholder="input search text"
+                
                   />
             </Col>
-            <Col span={8} style={{ display: 'flex',left :'60px',gap :'20px'}}>
+            <Col span={8} style={{ display: 'flex',left :'60px',gap :'20px',  alignItems:'center'}}>
               <WrapperHeaderAccount>
                 <div>
                   <SmileOutlined style={{fontSize:'25px'}}/>
