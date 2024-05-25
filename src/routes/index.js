@@ -1,18 +1,28 @@
-import OrderPage from "../OrderPage/OrderPage";
-import ProductsPAge from "../ProductsPage/ProductsPAge";
-import HomePage from "../pages/HomePage/HomePage";
+import OrderPage from "../pages/OrderPage/OrderPage";
+import ProductsPage from "../pages/ProductsPage/ProductsPage";
+import HomePage from "../pages/HomePage/HomePage"
+import NotFoundPage from "../pages/NotFoundPage/NotFoundPage"
 
 export const routes=[
     {
         path: '/',
-        page: HomePage
+        page: HomePage,
+        isShowHeader: true,
+
     },
     {
         path: '/order',
-        page: OrderPage
+        page: OrderPage,
+        isShowHeader: true,
     },
     {
-        path: '/Products',
-        page: ProductsPAge
+        path: '/products',
+        page: ProductsPage,
+        isShowHeader: true,
+    },
+    {
+        path: '*',
+        page: NotFoundPage,
+        isShowHeader: false,
     }
 ]
