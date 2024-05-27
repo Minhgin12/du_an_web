@@ -12,7 +12,7 @@ const NavbarComponent = () => {
         });
       case 'checkbox':
         return (
-          <Checkbox.Group style={{ width: "100%", display: 'flex', flexDirection: 'Column', gap: '20px' }} onChange={onChange}>
+          <Checkbox.Group style={{ width: "100%", display: 'flex', flexDirection: 'Column', gap: '10px' }} onChange={onChange}>
             {
                 options.map((option) => {
                     return (
@@ -25,7 +25,7 @@ const NavbarComponent = () => {
         )
         case 'star':
             return options.map((option) => {
-                console.log('check',option)
+                //console.log('check',option)
                 return (
                     <div style={{ display: 'flex', gap: '12px'}}>
                         <Rate style={{ fontSize: '12px'}} disabled defaultValue={option}/>
