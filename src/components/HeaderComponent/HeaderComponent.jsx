@@ -1,5 +1,5 @@
 import React from 'react'
-import {Col } from 'antd'
+import {Badge, Col } from 'antd'
 import { WrapperHeader, WrapperHeaderAccount, WrapperTextHeader, WrapperTextHeaderSmall } from './style'
 import {
   SmileOutlined,CaretDownOutlined,ShoppingCartOutlined
@@ -8,13 +8,12 @@ import ButtoninputSearch from '../ButtoninputSearch/ButtoninputSearch';
 
 const HeaderComponent = () => {
   return (    // <WrapperHeader gutter={16}> kh cách giữa user and search
-    <div>
+    <div style={{ width: '100%', background: 'rgb(26, 148, 255)', display: 'flex', justifyContent: 'center'}}>
         <WrapperHeader > 
             <Col span={4}>
-              <WrapperTextHeader>TIKI</WrapperTextHeader>
+              <WrapperTextHeader>HAIZZ</WrapperTextHeader>
             </Col>
             <Col span={12}>
-            
                 <ButtoninputSearch
                 size="large"
                 bordered="false"
@@ -23,7 +22,7 @@ const HeaderComponent = () => {
                 
                   />
             </Col>
-            <Col span={8} style={{ display: 'flex',left :'60px',gap :'20px',  alignItems:'center'}}>
+            <Col span={8} style={{ display: 'flex',left :'60px',gap :'40px',  alignItems:'center'}}>
               <WrapperHeaderAccount>
                 <div>
                   <SmileOutlined style={{fontSize:'25px'}}/>
@@ -37,7 +36,9 @@ const HeaderComponent = () => {
                 </div>
               </WrapperHeaderAccount>
               <div>
-                  <ShoppingCartOutlined style={{fontSize: '30px', color: '#fff'}}/>
+                  <Badge count='4' size="small">
+                    <ShoppingCartOutlined style={{fontSize: '30px', color: '#fff'}}/>
+                  </Badge>
                   <WrapperTextHeaderSmall>Giỏ hàng</WrapperTextHeaderSmall>
               </div>
             </Col>
