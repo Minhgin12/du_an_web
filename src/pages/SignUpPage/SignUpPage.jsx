@@ -10,7 +10,7 @@ const SignUpPage = () => {
   const [isShowPassword, setIsShowPassword] = useState(false)
   const [isShowComfirmPassword, setIsShowComfirmPassword] = useState(false)
   return (
-    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#ccc', height: '713px'}}>
+    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#ccc', height: '100vh'}}>
       <div style={{ width: '800px', height: '445px', borderRadius: '6px', background: '#fff', display: 'flex'}}>
       <WrapperContainerLeft>
         <h1>Xin chào</h1>
